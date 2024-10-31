@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --colorFondo1:#e48207;
+    --colorFondo2:#fa981e;
+    --colorFondo3:#fab765;
+    --colorLetra1:#4b2a01;
+}
+
+
+
+header{
+  display: flexbox;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: var(--colorFondo1);
+  padding-bottom: 10px;
+}
+
+header>div{
+  text-align: end;
+  margin-right: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header>h1{
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color:var(--colorLetra1);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.bi{
+  margin: 0 5px;
+  color:var(--colorLetra1);
+}
+
+nav>ul{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+nav>ul>li{
+  display: flex;
+  margin:0 40px;
+}
+
+nav>ul>.bi-search{
+  margin-left: 0;
+  padding-top: 5px;
+}
+
+nav>ul>div{
+  border: 1px solid black;
+  background-color: var(--colorFondo2);
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover{
+  color: red;
+  font-size:30px;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-shadow:0 2.5px 5px rgba(0,0, 0, 0.8);
+}
+
+.item_nav:hover{
+ color: red;
+ font-size:30px;
+ cursor: pointer;
+ transition: all 0.5s;
+ text-shadow:0 2.5px 5px rgba(0,0, 0, 0.8) ;
+}
+
+.carousel-item img {
+  width: 100%; 
+  height: 200px;
+}
+
+.main{
+  position: relative;
+  background-color: var(--colorFondo1);
+  z-index: 1;
+}
+
+.grid_container_cards{
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns:repeat(3,400px) ;
+  gap: 20px;
+  background-color: var(--colorFondo1);
+  padding :40px 50px;
+}
+
+.cards{
+  background-color: var(--colorFondo2);
+  border: 2px solid var(--colorLetra1);
+  border-radius: 10px;
+}
+
+.imagen_cards{
+  width: 300px;
+  height: 250px;
+  margin: 30px 50px;
+  border: 1.5px solid var(--colorLetra1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0, 0, 1);
+
+  
+}
+
+.grid_container_cards h4{
+  text-align: center;
+}
+
+.grid_container_cards h6{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tarjetas_credito{
+ width: 100px;
+ height: 57px;
+ background-color: white;
+ border-radius: 10px;
+ padding: 10px;
+ margin-right: 20px;
+ margin-left: 50px;
+ margin-bottom: 5px;
+}
+
+.btn{
+  margin-bottom: 5px;
+}
+
+footer{
+  
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: auto;
+ 
+}
+
+footer h4{
+  background-color: var(--colorFondo1);
+  padding: 80px 0 50px 338px ;
+  font-size: 20px;
+
+}
+
+footer h1{
+  text-align: center;
+  padding-top: 50px;
+  font-family: "S Playwrite GB ", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color:gray;
+  text-shadow:0 2.5px 5px rgba(255,255, 255, 0.8);
+}
+
+
+footer .somosDisenio1{
+  color: red;
+}
+
+footer .somosDisenio2{
+  color: violet;
+}
+
+footer h6{
+  text-align: center;
+  color: white;
+}
+
+.logos_footer{
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 50px;
+}
+
+.container_ingreso{
+  position: absolute;
+  display: flexbox;
+  top:50%;
+  left:40%;
+  justify-items: center;
+  z-index: 99;
+  width: 350px;
+  min-height: auto;
+  background-color:var(--colorFondo3);
+  background-image: linear-gradient(150deg,var(--colorFondo1),var(--colorLetra1));
+  border: 2px solid var(--colorLetra1);
+  border-radius: 10px;
+
+}
+
+.container_ingreso h3{
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color:var(--colorLetra1);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container_ingreso label{
+  margin-left: 20px;
+ 
+}
+
+.container_ingreso input{
+  margin-left: 20px;
+  padding-left: 50px;
+  border: 2px solid var(--colorLetra1);
+  border-radius: 10px;
+}
+
+.container_ingreso form button{
+  margin: 20px 0 20px 125px;
+  border: 1px solid black;
+}
+
+.boton_volver{
+  margin: 10px 0 20px 0;
+  border: 1px solid black;
+
+}
+
+.boton_volver a{
+  text-decoration: none;
+  color: white;
+}
+
+@media(max-width:1322px){
+
+*{
+  min-width: 1322;;
+}
+
+.grid_container_cards{
+  margin:0 auto;
+}
+}
+  
