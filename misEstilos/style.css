@@ -31,7 +31,7 @@
   font-weight: 700;
   font-style: normal;
   color:var(--colorLetra1);
-  font-size: 4em;
+  font-size: 2em;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -95,7 +95,7 @@ nav a{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit,minmax(375px ,1fr));
-    padding-left: 3rem;
+    padding-left: 1rem;
     background-color: var(--colorFondo2);
     border: 2px solid var(--colorLetra1);
 
@@ -225,8 +225,8 @@ footer h6{
   }
   
   /*----medida celular---*/
-  @media only screen and (max-width: 500px){
-    
+  @media only screen and (max-width: 920px){
+   
     nav>ul{
         display: block;
         width: 100%;
