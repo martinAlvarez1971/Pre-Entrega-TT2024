@@ -225,7 +225,7 @@ footer h6{
   }
   
   /*----medida celular---*/
-  @media only screen and (max-width: 920px){
+  @media only screen and (max-width: 500px){
    
     nav>ul{
         display: block;
