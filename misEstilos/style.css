@@ -32,7 +32,7 @@
   font-style: normal;
   color:var(--colorLetra1);
   font-size: 2em;
-  text-align: center;
+  justify-content: center;
   padding-bottom: 20px;
 }
 
@@ -58,13 +58,13 @@ nav>ul{
 nav a{
     text-decoration: none;
     color: black;
-    font-size: 2rem;
+    font-size: 1.3rem;
     list-style: none;
   }
   
   nav a:hover{
     color: red;
-    font-size:3rem;
+    font-size:1.8rem;
     cursor: pointer;
     transition: all 0.5s;
     text-shadow:0 2.5px 5px rgba(0,0, 0, 0.8);
@@ -103,7 +103,7 @@ nav a{
 
 main .imagen_cards{
     padding: 1rem;
-    width: 375px;
+    width: 390px;
     height: 250px;
     margin-top: 20px;
     border: 1.5px solid var(--colorLetra1);
@@ -226,7 +226,18 @@ footer h6{
   
   /*----medida celular---*/
   @media only screen and (max-width: 500px){
-   
+    .container_header>h1{
+      display: flex;  
+      font-family: "Playwrite GB S", cursive;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      color:var(--colorLetra1);
+      font-size: 2em;
+      justify-content: left;
+      padding-bottom: 20px;
+    }
+
     nav>ul{
         display: block;
         width: 100%;
@@ -239,13 +250,13 @@ footer h6{
         display: block;
         text-decoration: none;
         color: black;
-        font-size: 2rem;
+        font-size: 1.3rem;
         list-style: none;
       }
       
       nav a:hover{
         color: red;
-        font-size:3rem;
+        font-size: 1.8rem;
         cursor: pointer;
         transition: all 0.5s;
         text-shadow:0 2.5px 5px rgba(0,0, 0, 0.8);
